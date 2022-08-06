@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    
+    <link rel="canonical" href="./index.html">
+
+    <!--Css Used-->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/swipper.css">
+
+    <!--CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.min.js" integrity="sha512-CGsqPVUZUUVx5RS41AFdu5Ghj3cKcpHxg7ae66br18nqK5dTPJ2k6srKYVHMMIvaq96QIoOE8JrqXrlWuppfEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.6/swiper-bundle.css" integrity="sha512-LTz09eiSkjtMayQgsyCcxuA2POUuvwdJoejrNLLIj5tulySAEAFgRHXW5JO4/qW36nurH8iApZ4SMj9E2rRHtQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="">
+
+
+    <div class="container">
+
+       
+
+        
+            <nav class="">
+                <!-- USER ACCOUNT NAME IN THE NAV  -->
+                <div class="acctount">
+                    <button type="button">
+                    <i class="bi bi-lock"></i>
+                    <span class="UserName">PilentBoy</span>
+                    <i class="bi bi-chevron-down" id="downArrow"></i> 
+                    </button>
+                </div>
+
+                <!-- SETTING AND ADD POST BUTTON IN THE NAV-->
+                <div class="options">
+                    <button type="button" id="addPost"><i class="bi bi-plus-square"></i></button>
+                    <button type="button" id="settingBtn"><i class="bi bi-list"></i></button>
+                </div>
+            </nav>
+    
+        
+        <!-- USER NAME , USER PROFILE PHOTO , FOLLOWERS , POSTS , FOLLOWING  -->
+        <section class="mainInfo">
+
+                <div class="userPicture">
+                    <div class="userImage"></div>
+                    <span class="name">Mahdi Ebrahimi</span>
+                </div>
+
+                <div class="posts">
+                    <span class="postsCoun">100</span>
+                    <span class="specialSpan">Posts</span>
+                </div>
+                <div class="followers">
+                    <span class="followersCoun">1200</span>
+                    <span class="specialSpan">Followers</span>
+                </div>
+                <div class="following">
+                    <span class="followingCoun">50</span>
+                    <span class="specialSpan"> Following</span>
+                </div>
+
+        </section>
+        
+        <!-- USER DESCRIPTION -->
+
+        <section class="userDesc">
+            <SPAN class="description">HI!my name is Mahdi</SPAN>
+        </section>
+
+        <!-- EDIT PROFILE BUTTON  -->
+        <section class="editProfile">
+            <button  type="button" id="editProf">Edit Profile</button>
+
+        <button type="button" id="discoPeo" > <i class="bi bi-person-plus" ></i></button> 
+        </section>
+
+ 
+         <!-- HIGHLIGHT STORIES  -->
+        <section class="hightlight">
+
+            <header class="storyheader">
+                <span id="storyhigh">Story highlight</span>
+                <button type="button" id="displayhightlight"><i class="bi bi-chevron-down" id="storydownArrow"></i> </button>
+            </header>
+
+            <div class="hightlights">
+                <header class="exmplanation">
+                    <span id="exmplain">keep your favorite stories on your profile</span>
+                </header>
+    
+                <div class="swiper mySwiper hightlight-sec">
+    
+                    <div class="swiper-wrapper">
+    
+                        <div class="swiper-slide">
+                            <div class="addStory">
+                                <div class="hightlightBTN">
+                                    <button type="button"><i class="bi bi-plus" ></i></button>
+                                </div>
+                                <span class="storyTitle"> add story</span>
+                            </div>
+                        </div>
+    
+                        <div class="swiper-slide">
+                            <div class="savedStory">
+                                <img src="./images/181231.jpg" alt="story">
+                                <span class="storyTitle">a story</span>
+                            </div>
+                           
+                        </div>
+                       
+                        <div class="swiper-slide">
+                            <div class="savedStory">
+                                <img src="./images/181234.jpg" alt="story">
+                                <span class="storyTitle">a story</span>
+                            </div>
+                           
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="savedStory">
+                                <img src="./images/181248.jpg" alt="story">
+                                <span class="storyTitle">a story</span>
+                            </div>
+                           
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="savedStory">
+                                <img src="./images/moon.jpg" alt="story">
+                                <span class="storyTitle">a story</span>
+                            </div>
+                           
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="savedStory">
+                                <img src="./images/earth.jpg" alt="story">
+                                <span class="storyTitle">a story</span>
+                            </div>
+                           
+                        </div>
+                       
+                       
+                    </div>
+                    
+                  </div>
+    
+            </div>
+            
+            
+            
+        </section>
+
+        <section class="contentPart">
+            <button type="button" id="showPostsBTN" ><i class="bi bi-border-all"></i></button>
+            <button type="button" id="showTaggedBTN"><i class="bi bi-person-rolodex"></i></button>
+        </section>
+        <!-- user posts uploaded--->
+        <section class="userPosts">
+
+            <div class="userPostsRow">
+                <div class="userPost"><img src="./images/w.png" alt="post"></div>
+                <div class="userPost"><img src="./images/earth.jpg" alt="post"></div>
+                <div class="userPost"><img src="./images/181231.jpg" alt="post"></div>
+            </div>
+
+            <div class="userPostsRow">
+                <div class="userPost"><img src="./images/earth.jpg" alt="post"></div>
+                <div class="userPost"><img src="./images/181231.jpg" alt="post"></div>
+                <div class="userPost"><img src="./images/w.png" alt="post"></div>
+            </div>
+            <div class="userPostsRow">
+                <div class="userPost"><img src="./images/w.png" alt="post"></div>
+                <div class="userPost"><img src="./images/earth.jpg" alt="post"></div>
+                <div class="userPost"><img src="./images/earth.jpg" alt="post"></div>
+            </div>
+            <div class="userPostsRow">
+                <div class="userPost"><img src="./images/1122.jpg" alt="post"></div>
+                <div class="userPost"><img src="./images/44395wide.jpg" alt="post"></div>
+                <div class="userPost"><img src="./images/earth.jpg" alt="post"></div>
+            </div>
+            
+            <div class="userPostsRow">
+                <div class="userPost"><img src="./images/earth.jpg" alt="post"></div>
+                <div class="userPost"><img src="./images/181231.jpg" alt="post"></div>
+                <div class="userPost"><img src="./images/1122.jpg" alt="post"></div>
+            </div>
+            
+        </section>
+        
+        <!-- the posts someone tagged this user -->
+        <section class="postsTagged">
+            <h1>empty</h1>
+        </section>
+
+        <!-- footer buttons  -->
+        <div class="InstagramSections">
+
+            <button type="button"><i class="bi bi-house-door"></i></button>
+            <button type="button"><i class="bi bi-search"></i></button>
+            <button type="button"><i class="bi bi-plus-square"></i></button>
+            <button type="button"><i class="bi bi-heart"></i></button>
+            <button type="button"><i class="bi bi-person"></i></button>
+
+    </div>
+
+    </div>
+
+    <script src="./JS/app.js"></script>
+    <script src="./JS/swipper.js"></script>
+
+    
+</body>
+</html>

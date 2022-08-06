@@ -1,0 +1,459 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+span{
+    color: white;
+}
+
+i {
+    color: white;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+h4{
+	color:red;
+}
+
+
+html,body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	overflow-y:hidden;
+	overflow-x:hidden;
+    background-color: rgb(50, 43, 43);
+}
+
+
+
+.container{
+    margin-top: 2px;
+    width: 350px;
+    max-width: 350px;
+    height: 630px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px black;
+}
+
+/*------------ InstagramSections */
+.InstagramSections{
+    flex:0.5;
+    background: black;
+    width: 100%;
+    height:45px;
+    bottom: 0px;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+}
+
+.InstagramSections button i{
+    font-size: 1.2rem;
+}
+
+
+/*------------ Nav */
+.container  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.5;
+    width: 100%;
+    color: white;
+}
+
+#downArrow{
+    font-size: 0.8rem;
+}
+
+nav .acctount{
+    flex: 3;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    margin: 0px 5px;
+}
+
+
+.acctount .UserName{
+    font-size: 1.1rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.acctount button i{
+    font-size: 1rem;
+}
+
+
+.acctount button{
+    margin: 0px 3px;
+}
+
+
+nav .options{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.options i{
+    font-size: 1.3rem;
+}
+
+#settingBtn i{
+    font-size: 1.6rem;
+}
+
+
+
+
+
+/*------------ MAIN INFO */
+
+.mainInfo{
+    flex: 0.8;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.specialSpan{
+    font-size: 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.userPicture{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.userImage{
+    border-radius: 50%;
+    background-image: url("../images/profile.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+}
+
+.userPicture .name{
+    color: white;
+    font-size: 0.7rem;
+    margin-top: 4px;
+}
+
+.posts{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+.followers{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+.following{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+
+
+
+
+/*------------ USER DESCRITION*/
+
+.userDesc{
+    flex: 0.2;
+    font-size: 0.7rem;
+    margin: 2px 5px;
+    width: 40%;
+}
+
+.userDesc .description{
+    text-overflow:ellipsis;
+
+}
+
+/*------------ edit Profile*/
+
+.editProfile{
+    flex: 0.4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0px 5px;
+}
+#editProf{
+    flex: 1.2;
+    background-color: rgb(60, 59, 59);
+    border-radius: 10px;
+    height: 26px;
+    color: white;
+
+}
+
+#discoPeo{
+    flex: 0.1;
+    background-color: rgb(60, 59, 59);
+    border-radius: 10px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    margin: 0px 2px;
+}
+
+#discoPeo i{
+    font-size: 1rem;
+}
+
+
+/*------------ hightlight*/
+.hightlight {
+    flex: 1.4 ;
+    width: 100%;
+    padding: 0px 10px;  
+    display: flex;
+    flex-direction: column;
+}
+
+.hightlight-sec{
+    margin-top: 5px;
+}
+.savedStory:hover{
+    cursor:grab;
+}
+
+.savedStory:active{
+    cursor:grabbing;
+}
+
+.hightlight {
+    flex: 1.4;
+    width: 100%;
+    padding: 0px 10px;  
+}
+.storyheader{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+#storyhigh{
+    font-size: 0.8rem;
+}
+#storydownArrow{
+    font-size: 0.7rem;
+}
+
+
+.hightlights{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#exmplain{
+    font-size: 0.7rem;
+    font-family:sans-serif;
+}
+
+.savedStories{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.addStory{ 
+    width: 80px;
+    height:80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.addStory .hightlightBTN{
+    border: 1px solid white;
+    border-radius: 50%; 
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hightlightBTN button i{
+    font-size: 2rem;
+}
+
+.savedStory{
+    border: 1px solid transparent;
+    border-radius: 50%; 
+    width: 80px;
+    height:80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.savedStory img{
+    width: 75% !important;
+    height: 75% !important;
+    border-radius: 50%;
+}
+
+.storyTitle{
+    font-size: 0.7rem;
+} 
+
+/*------------ posts and tag*/
+
+.contentPart{
+    width: 100%;
+    display: flex;
+    flex: 0.5;
+    border-bottom: 1px solid gray;
+}
+
+#showPostsBTN {
+    flex: 1;
+}
+
+#showPostsBTN:focus{
+    border-bottom: 2px solid white;
+
+}
+
+#showTaggedBTN:focus{
+    border-bottom: 2px solid white;
+}
+
+
+
+#showPostsBTN  i{
+    font-size: 1.2rem;
+}
+
+#showTaggedBTN {
+    flex:1;
+}
+#showTaggedBTN i {
+    font-size: 1.2rem;
+}
+
+
+
+
+
+/*------------ userPosts*/
+
+.userPosts{
+    flex: 3;
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    overflow-y:scroll;
+}
+
+/* for Chrome, Safari and Opera*/
+.userPosts::-webkit-scrollbar{
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.userPosts {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+
+.userPosts .userPostsRow{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+
+}
+
+.userPosts .userPostsRow .userPost {
+    padding: 1px;
+    width: 120px;
+}
+
+.userPosts .userPostsRow .userPost img{
+    width: 100%;
+}
+
+
+
+/*------------ userPosts tagged*/
+
+.postsTagged{
+    flex: 3;
+    display: none;
+    background-color: black;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
